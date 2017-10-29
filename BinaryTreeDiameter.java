@@ -27,9 +27,10 @@ class BinaryTreeDiameter{
 		} 
 	}
 	decisionVal diameter(TreeNode curr){
-		if (curr.left == null && curr.right == null) {//leaf node
+		if (curr.left == null && curr.right == null) {//leaf node ap
 			return new decisionVal(1,1);
 		}
+		//
 		decisionVal temp1 = new decisionVal(),temp2 = new decisionVal();
 		if (curr.left!=null) {
 			temp1 = diameter(curr.left);
